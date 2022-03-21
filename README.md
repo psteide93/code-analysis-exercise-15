@@ -8,7 +8,7 @@ Your task is to figure out how this code works.
 * Write a summary of what the function does.
 
 ```js
-function (person, petName){
+function (person, petName){        
   for (dog in person.dogs){
     if (dog.name === petName){
       return dog
@@ -19,14 +19,14 @@ function (person, petName){
 
 | Input | Output |
 | ----- | ------ |
-|       |        | 
-|       |        | 
-|       |        | 
+| ({name: "Joe", age: 17, dog: [{name: "Sparky", breed: "German Shepard" }, {name: "Racer", breed: "Husky" }}, "Sparky") |    {name: "Sparky", breed: "German Shepard" } | 
+| ({name: "Karen", age: 87, dog: {name: "Cleo", breed: "Chihuaha" }}, "Bean")      |   undefined     | 
+
 
 <table>
   <tr>
     <th>What does this program do?</th>
-    <td></td>
+    <td> What this function does is it takes an object called person, and looks for a nested object within it called dogs, if the pet name, which is the second parameter of the function, matches the name of the pet in the nested object, it will return the dog object. </td>
   </tr>
 </table>
 
